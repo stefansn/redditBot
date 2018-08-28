@@ -9,7 +9,7 @@ import pandas as pd
 
 def authenticate():
     print("Authenticating...")
-    reddit = praw.Reddit('reddit bot', user_agent="")
+    reddit = praw.Reddit('redditbot', user_agent="")
 
     print("Authenticated as {}".format(reddit.user.me()))
     return reddit
